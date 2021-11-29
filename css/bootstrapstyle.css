@@ -274,3 +274,18 @@ h2{
 .container3{
   background-color: #000;
 }
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h6{
+  color: white;
+}
+
