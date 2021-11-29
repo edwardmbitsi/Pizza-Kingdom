@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrapstyle.css" rel="stylesheet">
+	<link href="index.js" rel="stylesheet">
+	<title>Pizza</title>
+
+	<style>
+		.container {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center
+		}
+		img {
+		  max-width: 100%
+		}
+		.image {
+		  flex-basis: 70%;
+		  order: 2;
+		}
+		.para {
+		  color: #CD5C5C;
+		  padding-left: 20px;
+		  font: italic 10px "Fira Sans", serif;
+		}
+
+	table, th, td {
+    border: 1px white;
+  	border-collapse: collapse;
+	}
+	th, td {
+  	padding: 5px;
+  	text-align: left;
+	}
+	  </style>
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<h3><l>Pizza Kingdom</l></h3>
+			<a href="#home">Home</a>
+			<div class="dropdown">
+			<button class="dropbtn">Dropdown
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+			</div>
+			</div>
+		  </div>
+	<!-- Header Menu of the Page -->
+<header>
+	<div class="header">
+		<div class="progress-container">
+		  <div class="progress-bar" id="myBar"></div>
+		</div>
+	  </div>
+	<!-- Top header menu containing
+		logo and Navigation bar -->
+	<div id="top-header">
+	<!-- Image menu in Header to contain an Image and
+		a sample text over that image -->
+	<div id="header-image-menu">
+		<img src="/home/edward/Desktop/white/images/Delicious Pizza Poster Background.jpeg">
+		<h2 id = "image-text">
+			Welcome to Pizza Kingdom!
+		</h2>
+	</div>
+</header>
+<h2 style="text-align: center; color: black; font-family: 'Princess Sofia', cursive; font-size: 30px;">Abouts Us</h2>
+<div class="container">
+	<div class="image">
+	  <img src="/home/edward/Desktop/white/images/about.jpg">
+	</div>
+	<div class="para">
+	  <h1>London is the capital and largest city of England.</h1>
+	</div>
+  </div>
+  <div class="container2">
+   <p style="text-align: center; font-family:'News Cycle', sans-serif; font-size: 27px;">Opening Hours</p>
+   <div class="w3-row" style="text-align: center;">
+	<div class="w3-half" style="left: 40%;">
+	  <p style="font-family: 'News Cycle', sans-serif;">Mon & Tue CLOSED</p>
+	  <p style="font-family: 'News Cycle', sans-serif;">Wednesday 10.00 - 24.00</p>
+	  <p style="font-family:'News Cycle', sans-serif;">Thursday 10:00 - 24:00</p>
+	</div>
+	<div class="w3-half" style="right: 60%;">
+	  <p style="font-family: 'News Cycle', sans-serif;">Friday 10:00 - 12:00</p>
+	  <p style="font-family:'News Cycle', sans-serif;">Saturday 10:00 - 23:00</p>
+	  <p style="font-family:'News Cycle', sans-serif;">Sunday Closed</p>
+	</div>
+	</div>    
+	</div>
+  </div>
+  <h1 style="text-align: center;font-family: 'Princess Sofia', cursive;">Our Menu</h1>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="/home/edward/Desktop/white/images/Pizza Dough recipe – best ever homemade pizza!.jpeg" style="width:100%">
+	  <div class="text" style="color:white; background-color: black;">Chicken Pizza</div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="/home/edward/Desktop/white/images/Cheesy BBQ Chicken Pizza.jpeg" style="width:100%">
+	  <div class="text" style="color:white; background-color: black;">Vegetable Pizza</div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="/home/edward/Desktop/white/images/Sweet Chili Garlic Chicken Pizza.jpeg" style="width:100%">
+	  <div class="text" style="color:white; background-color: black;">Cheese Pizza</div>
+	</div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+  
+			<br>
+			<form name="tblform" >
+				<table width="80%"  id="alignment2" >
+				<tr>
+				<th>Food Item</th>
+				<th> </th>
+				<th>Quantity</th>
+				<th>Price</th> 
+				</tr>
+				<tr> 
+				<td>Item 1:</td> 
+				<td>
+				<select id="item1">
+				<option value="1">--Select Item--</option> 
+				<option value="Chicken pizza">Chicken pizza</option> 
+				<option value="Vegetable Pizza">Vegetable Pizza</option> 
+				<option value="Chicken Kottu">Cheese Pizza</option>
+				</select>
+				</td> 
+				<td><input type="number" value="0" id="q1"></td>
+				<td><input type="text" id="p1"></td>
+				</tr>   
+				<tr>
+				<td>Item 2:</td>
+				<td>
+				<select id="item2"> 
+				<option value="1">--Select Item--</option> 
+				<option value="Chicken pizza">Chicken pizza</option> 
+				<option value="Vegetable Pizza">Vegetable Pizza</option> 
+				<option value="Chicken Kottu">Cheese Pizza</option>
+				</select>
+				</td>
+				<td><input  type="number" value="0" id="q2"></td>  
+				<td><input type="text"  id="p2"></td>  
+				</tr> 
+				<tr>
+				<td>Item 3:</td>
+				<td><select id="item3">  
+				<option value="1">--Select Item--</option> 
+				<option value="Chicken pizza">Chicken pizza</option>  
+				<option value="Vegetable Pizza">Vegetable Pizza</option> 
+				<option value="Chicken Kottu">Cheese Pizza</option>
+				</select>
+				</td>
+				<td><input type="number" value="0" id="q3"></td>
+				<td><input type="text"  id="p3"></td> 
+				</tr> 
+				<tr>
+				<td>Item 4:</td>
+				<td><select id="item4">   
+				<option value="1">--Select Item--</option> 
+				<option value="Chicken pizza">Chicken pizza</option>   
+				<option value="Vegetable Pizza">Vegetable Pizza</option> 
+				<option value="Chicken Kottu">Cheese Pizza</option> 
+				</select>
+				</td>
+				<td><input type="number" value="0" id="q4"></td>
+				<td><input type="text"  id="p4"></td> 
+				</tr>    
+				<tr>
+				<td></td> 
+				<td></td> 
+				<td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+				<td><input type="reset" class="button" value="Clear"></td>
+				</tr>
+				</table>
+				</form>
+
+
+<script src="index.js"></script>
+	
+</body>
+</html>
