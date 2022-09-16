@@ -6,3 +6,7 @@ justify-content: center
 img {
 max-width: 100%
 }
+.image {
+flex-basis: 70%;
+order: 2;
+}
