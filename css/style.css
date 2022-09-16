@@ -91,4 +91,5 @@ padding: 2px 16px;
 background-color: orange;
 color: white;
 }
-        
+
+.modal-body {padding: 2px 16px;}
