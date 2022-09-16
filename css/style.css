@@ -70,3 +70,11 @@ to {top:0; opacity:1}
 from {top:-300px; opacity:0}
 to {top:0; opacity:1}
 }
+
+/* The Close Button */
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
