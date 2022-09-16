@@ -10,3 +10,9 @@ max-width: 100%
 flex-basis: 70%;
 order: 2;
 }
+.para {
+color: black;
+padding-left: 20px;
+font: italic 10px "Fira Sans", serif;
+width: 50%;
+}
